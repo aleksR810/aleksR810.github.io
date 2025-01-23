@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-
 import 'package:flutter/material.dart';
-
+<base herf="ídice 2">
 void main() {
   runApp(const App());
 }
-<base href="ídice 2">
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -18,10 +13,10 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Layout',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(209, 3, 0, 0)),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomePage(title: 'Programa'),
+      home: const HomePage(title: 'Programa Layout'),
     );
   }
 }
@@ -55,7 +50,7 @@ class _HomePageState extends State<HomePage> {
               child: Container(
                 alignment: Alignment.center,
                 // color: Colors.amber,
-                child: const Text('Superior'),
+                child: const Text('Layout Superior'),
               ),
             ),
             Expanded(
@@ -75,7 +70,7 @@ class _HomePageState extends State<HomePage> {
                     child: Container(
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                        color: const Color.fromARGB(255, 255, 0, 55),
+                        color: Colors.blue,
                         borderRadius: BorderRadius.circular(20),
                         border: Border.all(
                           color: Colors.black,
@@ -89,7 +84,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ],
                       ),
-                      child: const Text('area printipal'),
+                      child: const Text('Meu Aplicativo'),
                     ),
                   ),
                   Expanded(
@@ -107,7 +102,7 @@ class _HomePageState extends State<HomePage> {
               child: Container(
                 alignment: Alignment.center,
                 //color: Colors.blue,
-                child: const Text('inferior'),
+                child: const Text('Layout Inferior'),
               ),
             ),
           ],
@@ -121,5 +116,3 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
-</Head>
-</html>
